@@ -1,3 +1,6 @@
+old_logger = ActiveRecord::Base.logger
+ActiveRecord::Base.logger = nil
+
 describe 'Movie' do
   let(:attributes) {{
       title: "The Sting",
